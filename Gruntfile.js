@@ -6,7 +6,7 @@ module.exports = function(grunt) {
       concat: {
         common: {
           src: [
-            'base-mpmb-env/.blobs/all.pre.js', 
+            'base-mpmb-env/.blobs/common.blob.js', 
             'datasource/MPMB-Base/_functions/Functions0.js', 
             'datasource/MPMB-Base/_functions/Functions1.js', 
             'datasource/MPMB-Base/_functions/Functions2.js', 
@@ -17,7 +17,7 @@ module.exports = function(grunt) {
         backgrounds: {
             src: [
                 "base-mpmb-env/.blobs/backgrounds.base.pre.js",
-                "base-mpmb-env/.blobs/all.merged.js",
+                "base-mpmb-env/common-clean.tmp",
                 "datasource/MPMB-Base/_variables/Lists.js",
                 "datasource/MPMB-Base/_variables/ListsBackgrounds.js", 
                 "base-mpmb-env/.blobs/backgrounds.base.post.js"
@@ -27,7 +27,7 @@ module.exports = function(grunt) {
         classes: {
             src: [
                 "base-mpmb-env/.blobs/classes.base.pre.js", 
-                "base-mpmb-env/.blobs/all.merged.js",
+                "base-mpmb-env/common-clean.tmp",
                 "datasource/MPMB-Base/_variables/Lists.js",
                 "datasource/MPMB-Base/_variables/ListsClasses.js", 
                 "base-mpmb-env/.blobs/classes.base.post.js"
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
         creatures: {
             src: [
                 "base-mpmb-env/.blobs/creatures.base.pre.js", 
-                "base-mpmb-env/.blobs/all.merged.js",
+                "base-mpmb-env/common-clean.tmp",
                 "datasource/MPMB-Base/_variables/Lists.js",
                 "datasource/MPMB-Base/_variables/ListsCreatures.js", 
                 "base-mpmb-env/.blobs/creatures.base.post.js"
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
         feats: {
             src: [
                 "base-mpmb-env/.blobs/feats.base.pre.js", 
-                "base-mpmb-env/.blobs/all.merged.js",
+                "base-mpmb-env/common-clean.tmp",
                 "datasource/MPMB-Base/_variables/Lists.js",
                 "datasource/MPMB-Base/_variables/ListsFeats.js", 
                 "base-mpmb-env/.blobs/feats.base.post.js"
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
         gear: {
             src: [
                 "base-mpmb-env/.blobs/gear.base.pre.js", 
-                "base-mpmb-env/.blobs/all.merged.js",
+                "base-mpmb-env/common-clean.tmp",
                 "datasource/MPMB-Base/_variables/Lists.js",
                 "datasource/MPMB-Base/_variables/ListsGear.js", 
                 "base-mpmb-env/.blobs/gear.base.post.js"
@@ -67,7 +67,7 @@ module.exports = function(grunt) {
         magicitems: {
             src: [
                 "base-mpmb-env/.blobs/magicitems.base.pre.js", 
-                "base-mpmb-env/.blobs/all.merged.js",
+                "base-mpmb-env/common-clean.tmp",
                 "datasource/MPMB-Base/_variables/Lists.js",
                 "datasource/MPMB-Base/_variables/ListsMagicItems.js", 
                 "base-mpmb-env/.blobs/magicitems.base.post.js"
@@ -77,7 +77,7 @@ module.exports = function(grunt) {
         races: {
             src: [
                 "base-mpmb-env/.blobs/races.base.pre.js", 
-                "base-mpmb-env/.blobs/all.merged.js",
+                "base-mpmb-env/common-clean.tmp",
                 "datasource/MPMB-Base/_variables/Lists.js",
                 "datasource/MPMB-Base/_variables/ListsRaces.js", 
                 "base-mpmb-env/.blobs/races.base.post.js"
@@ -87,7 +87,7 @@ module.exports = function(grunt) {
         sources: {
             src: [
                 "base-mpmb-env/.blobs/sources.base.pre.js", 
-                "base-mpmb-env/.blobs/all.merged.js",
+                "base-mpmb-env/common-clean.tmp",
                 "datasource/MPMB-Base/_variables/Lists.js",
                 "datasource/MPMB-Base/_variables/ListsSources.js", 
                 "base-mpmb-env/.blobs/sources.base.post.js"
@@ -97,7 +97,7 @@ module.exports = function(grunt) {
         spells: {
             src: [
                 "base-mpmb-env/.blobs/spells.base.pre.js", 
-                "base-mpmb-env/.blobs/all.merged.js", 
+                "base-mpmb-env/common-clean.tmp", 
                 "datasource/MPMB-Base/_variables/Lists.js",
                 "datasource/MPMB-Base/_variables/ListsSpells.js", 
                 "base-mpmb-env/.blobs/spells.base.post.js"
@@ -106,8 +106,8 @@ module.exports = function(grunt) {
         },
         index: {
           src: [
-            'base-mpmb-env/.blobs/all.merged.js',
-            'base-mpmb-env/index.src.js'
+            'base-mpmb-env/common-clean.tmp',
+            'base-mpmb-env/.blobs/index.blob.js'
           ],
           dest: 'base-mpmb-env/index.js'
         }
@@ -122,7 +122,7 @@ module.exports = function(grunt) {
           },
           files: [{
               src: ["base-mpmb-env/common.tmp"],
-              dest: 'base-mpmb-env/.blobs/all.merged.js'
+              dest: 'base-mpmb-env/common-clean.tmp'
             }]
           },
         primary: {

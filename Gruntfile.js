@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         backgrounds: {
           src: [
             'base-mpmb-env/.blobs/backgrounds.base.pre.js', 
-            'datasource/MPMBs-Character-Record-Sheet/_variables/ListsBackgrounds.js', 
+            'datasource/MPMB-Base/_variables/ListsBackgrounds.js', 
             'base-mpmb-env/.blobs/backgrounds.base.post.js'
           ],
           dest: 'base-mpmb-env/lib/backgrounds.base.js'
@@ -15,7 +15,7 @@ module.exports = function(grunt) {
         classes: {
           src: [
             'base-mpmb-env/.blobs/classes.base.pre.js', 
-            'datasource/MPMBs-Character-Record-Sheet/_variables/ListsClasses.js', 
+            'datasource/MPMB-Base/_variables/ListsClasses.js', 
             'base-mpmb-env/.blobs/classes.base.post.js'
           ],
           dest: 'base-mpmb-env/lib/classes.base.js'
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
         creatures: {
           src: [
             'base-mpmb-env/.blobs/creatures.base.pre.js', 
-            'datasource/MPMBs-Character-Record-Sheet/_variables/ListsCreatures.js', 
+            'datasource/MPMB-Base/_variables/ListsCreatures.js', 
             'base-mpmb-env/.blobs/creatures.base.post.js'
           ],
           dest: 'base-mpmb-env/lib/creatures.base.js'
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
         feats: {
           src: [
             'base-mpmb-env/.blobs/feats.base.pre.js', 
-            'datasource/MPMBs-Character-Record-Sheet/_variables/ListsFeats.js', 
+            'datasource/MPMB-Base/_variables/ListsFeats.js', 
             'base-mpmb-env/.blobs/feats.base.post.js'
           ],
           dest: 'base-mpmb-env/lib/feats.base.js'
@@ -39,7 +39,7 @@ module.exports = function(grunt) {
         gear: {
           src: [
             'base-mpmb-env/.blobs/gear.base.pre.js', 
-            'datasource/MPMBs-Character-Record-Sheet/_variables/ListsGear.js', 
+            'datasource/MPMB-Base/_variables/ListsGear.js', 
             'base-mpmb-env/.blobs/gear.base.post.js'
           ],
           dest: 'base-mpmb-env/lib/gear.base.js'
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
         magicitems: {
           src: [
             'base-mpmb-env/.blobs/magicitems.base.pre.js', 
-            'datasource/MPMBs-Character-Record-Sheet/_variables/ListsMagicItems.js', 
+            'datasource/MPMB-Base/_variables/ListsMagicItems.js', 
             'base-mpmb-env/.blobs/magicitems.base.post.js'
           ],
           dest: 'base-mpmb-env/lib/magicitems.base.js'
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
         races: {
           src: [
             'base-mpmb-env/.blobs/races.base.pre.js', 
-            'datasource/MPMBs-Character-Record-Sheet/_variables/ListsRaces.js', 
+            'datasource/MPMB-Base/_variables/ListsRaces.js', 
             'base-mpmb-env/.blobs/races.base.post.js'
           ],
           dest: 'base-mpmb-env/lib/races.base.js'
@@ -63,7 +63,7 @@ module.exports = function(grunt) {
         sources: {
           src: [
             'base-mpmb-env/.blobs/sources.base.pre.js', 
-            'datasource/MPMBs-Character-Record-Sheet/_variables/ListsSources.js', 
+            'datasource/MPMB-Base/_variables/ListsSources.js', 
             'base-mpmb-env/.blobs/sources.base.post.js'
           ],
           dest: 'base-mpmb-env/lib/sources.base.js'
@@ -71,7 +71,7 @@ module.exports = function(grunt) {
         spells: {
           src: [
             'base-mpmb-env/.blobs/spells.base.pre.js', 
-            'datasource/MPMBs-Character-Record-Sheet/_variables/ListsSpells.js', 
+            'datasource/MPMB-Base/_variables/ListsSpells.js', 
             'base-mpmb-env/.blobs/spells.base.post.js'
           ],
           dest: 'base-mpmb-env/lib/spells.base.js'

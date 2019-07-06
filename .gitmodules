@@ -1,0 +1,3 @@
+[submodule "datasource/MPMB-Base"]
+	path = datasource/MPMB-Base
+	url = https://github.com/morepurplemorebetter/MPMBs-Character-Record-Sheet.git

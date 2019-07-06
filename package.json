@@ -2,13 +2,13 @@
   "name": "mpmb-toolkit",
   "version": "1.0.0",
   "description": "A version of MorePurpleMoreBetter's 5e character sheet javascript optimized for use outside of AcroForm PDFs",
-  "main": "index.js",
+  "main": "base-mpmb-env/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/morepurplemorebetter/MPMBs-Character-Record-Sheet.git"
+    "url": "git+https://github.com/mf1tts/dndata-5e.git"
   },
   "keywords": [
     "library",
@@ -22,14 +22,20 @@
   ],
   "devDependencies": {
     "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-concat": "^1.0.1",
-    "grunt-shell": "^3.0.1",
+    "grunt-replace": "^1.0.1",
+    "grunt-text-replace": "^0.4.0",
     "grunt-update-submodules": "^0.4.1"
   },
   "author": "MorePurpleMoreBetter, adapted by mfitts",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/morepurplemorebetter/MPMBs-Character-Record-Sheet/issues"
+    "url": "https://github.com/mf1tts/dndata-5e/issues"
   },
-  "homepage": "https://github.com/morepurplemorebetter/MPMBs-Character-Record-Sheet#readme"
+  "homepage": "https://github.com/mf1tts/dndata-5e#readme",
+  "dependencies": {
+    "clone": "^2.1.2",
+    "tosource": "^1.0.0"
+  }
 }

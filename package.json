@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "A version of MorePurpleMoreBetter's 5e character sheet javascript optimized for use outside of AcroForm PDFs",
   "main": "base-mpmb-env/index.js",
+  "files": [
+    "base-mpmb-env/lib/*",
+    "base-mpmb-env/index.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mf1tts/dndata-5e.git"

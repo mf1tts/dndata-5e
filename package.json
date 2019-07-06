@@ -21,7 +21,7 @@
     "mpmb"
   ],
   "devDependencies": {
-    "grunt": "^0.4.5",
+    "grunt": "^1.0.4",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-replace": "^1.0.1",
@@ -35,7 +35,6 @@
   },
   "homepage": "https://github.com/mf1tts/dndata-5e#readme",
   "dependencies": {
-    "clone": "^2.1.2",
-    "tosource": "^1.0.0"
+    "clone": "^2.1.2"
   }
 }

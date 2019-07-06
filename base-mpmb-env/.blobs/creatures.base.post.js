@@ -1,3 +1,3 @@
 module.exports = {
-    CreatureList = Base_CreatureList
+    CreatureList: Base_CreatureList
 }

@@ -1,11 +1,11 @@
 {
   "name": "dndata-5e",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A version of MorePurpleMoreBetter's 5e character sheet javascript optimized for use outside of AcroForm PDFs",
-  "main": "base-mpmb-env/index.js",
+  "main": "index.js",
   "files": [
-    "base-mpmb-env/lib/*",
-    "base-mpmb-env/index.js"
+    "datasource/lib/*",
+    "index.js"
   ],
   "repository": {
     "type": "git",
@@ -25,9 +25,7 @@
     "grunt": "^1.0.4",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-concat": "^1.0.1",
-    "grunt-replace": "^1.0.1",
-    "grunt-text-replace": "^0.4.0",
-    "grunt-update-submodules": "^0.4.1"
+    "grunt-replace": "^1.0.1"
   },
   "author": "!marion fitts",
   "license": "GPL-3.0",

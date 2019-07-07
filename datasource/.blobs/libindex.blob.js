@@ -1,3 +1,5 @@
+// BEGIN Module Shim
+
 
 module.exports = {
     BackgroundFeatureList: Base_BackgroundFeatureList,
@@ -25,8 +27,7 @@ module.exports = {
     AtHigherLevels: AtHigherLevels,
     spellLevelList: Base_spellLevelList,
     spellSchoolList: Base_spellSchoolList,
-    AllSpellsArray: AllSpellsArray, 
-    AllSpellsObject: AllSpellsObject, 
-    AddSpellsMenu: AddSpellsMenu, 
-    AllCasterClasses: AllCasterClasses
+    addContent: function(content) {
+        eval(content);
+    }
 }

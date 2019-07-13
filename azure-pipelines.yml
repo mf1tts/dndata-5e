@@ -15,7 +15,11 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
+- task: Grunt@0
+  inputs:
+    gruntFile: 'gruntfile.js'
+    gruntCli: 'node_modules/grunt-cli/bin/grunt'
+
 - script: |
     npm install
-    npm run build
-  displayName: 'npm install and build'
+  displayName: 'npm install'

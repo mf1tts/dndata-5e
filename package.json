@@ -29,6 +29,9 @@
   },
   "author": "!marion fitts",
   "license": "GPL-3.0",
+  "scripts": {
+    "test": "node test.js"
+  },
   "bugs": {
     "url": "https://github.com/mf1tts/dndata-5e/issues"
   },

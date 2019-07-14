@@ -11,6 +11,7 @@ module.exports = function(grunt) {
               'datasource/MPMB-Base/_functions/Functions1.js', 
               'datasource/MPMB-Base/_functions/Functions2.js', 
               'datasource/MPMB-Base/_functions/Functions3.js',
+              'datasource/MPMB-Base/_functions/FunctionsImport.js',
               "datasource/MPMB-Base/_variables/Lists.js",
               "datasource/.blobs/backgrounds.base.pre.js",
               "datasource/MPMB-Base/_variables/ListsBackgrounds.js", 
@@ -38,10 +39,16 @@ module.exports = function(grunt) {
       replace: {
         primary: {
           options: {
-            patterns: [{
-              match: /(?<!function )newObj\(/g,
-              replacement: "npmclone("
-            }]
+            patterns: [
+              {
+                match: /(?<!function )newObj\(/g,
+                replacement: "npmclone("
+              },
+              {
+                match: /Base_/g,
+                replacement: ""
+              }
+            ]
           },
           files: [
             {

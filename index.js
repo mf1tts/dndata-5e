@@ -1,4 +1,4 @@
-var data = require("lib/basedata");
+var data = require("./lib/basedata");
 
 module.exports = {
     data: data

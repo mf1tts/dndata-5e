@@ -5,10 +5,17 @@ Tools and pipelines for converting 5e character sheet data from the [MorePurpleM
 The current node module is super simple.  
 
 ```js
-var dndenv = require('dndata-5e');
+var dndata = require('dndata-5e').data;
 
-console.log(dndenv.data.SpellsList["alarm"].description);
+console.log(dndata.SpellsList["alarm"].description);
 /* Produces:
  "Door, window, or 20-ft cube area; audible (60 ft) or mental alarm (1 mile) if undesignated crea enters" */
 ```
-It only has the freely available/SRD content right now.  The next priority is going to be adding import functionality that can accept files matching the MPMB format.
+It only has the freely available/SRD content by default, just like the MPMB sheet.  However, a very basic import is available:
+
+```js
+var dndata = require('dndata-5e').data;
+var fs = require('fs');
+
+dndata.addContent(fs.readFileSync("path/to/mpmb-formatted-file.js", 'utf8'));
+```

@@ -21,5 +21,11 @@ steps:
     gruntCli: 'node_modules/grunt-cli/bin/grunt'
 
 - script: |
-    npm install
-  displayName: 'npm install'
+    npm install --dev
+  displayName: 'npm install --dev'
+- script: |
+    grunt
+  displayName: 'run grunt'
+- script: |
+    node test
+  displayName: 'node test'
